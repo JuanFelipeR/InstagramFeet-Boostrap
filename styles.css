@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Contenedor principal */
+.content {
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Estilo del título */
+header .tittle {
+    text-align: center;
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.tittle h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos de cada post */
+.feed {
+    background: rgb(248, 247, 247);
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+
+/* Encabezado de cada post */
+.feed header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tittlePhoto h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Imagen */
+.image img {
+    width: 100%;
+    display: block;
+}
+
+/* Descripción */
+.description {
+    padding: 15px;
+}
+
+.description p {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
