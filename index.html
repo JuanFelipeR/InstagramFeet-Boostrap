@@ -74,96 +74,103 @@
         </div>
     </nav>
 
-    <!--Guia prework feet de ig-->
-    <div class="container-fluid text-center">
+    <!-- Botones de vista -->
+<ul class="nav toggle-buttons justify-content-center" id="viewTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true">
+            <i class="fas fa-th-large"></i>
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="list-tab" data-bs-toggle="tab" data-bs-target="#list" type="button" role="tab" aria-controls="list" aria-selected="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </li>
+</ul>
+
+<!-- Contenido de los tabs -->
+<div class="tab-content">
+
+    <!-- Vista Grid (Solo imágenes) -->
+    <div class="container-fluid text-center tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+        <main class="row justify-content-center">
+            <div class="col-12 d-flex flex-wrap justify-content-center">
+                <div class="image m-2">
+                    <img src="/images/ps5.jpg" alt="Play Station 5" class="img-fluid" style="width: 350px; height: 350px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="image m-2">
+                    <img src="/images/xboxSeries.jpg" alt="Xbox Series" class="img-fluid" style="width: 350px; height: 350px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="image m-2">
+                    <img src="/images/psPortal.jpg" alt="Play Station Portal" class="img-fluid" style="width: 350px; height: 350px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="image m-2">
+                    <img src="/images/nintendoSwitch.jpg" alt="Nintendo Switch" class="img-fluid" style="width: 350px; height: 350px; object-fit: cover; border-radius: 10px;">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Vista Lista -->
+    <div class="container-fluid text-center tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
         <main class="row justify-content-center">
             <div class="col-6">
                 <div class="feed">
                     <header>
-                        <div class="tittlePhoto">
-                            <h2>Play station 5</h2>
-                        </div>
-                        <div>
-                            <p class="date">3/25</p>
-                        </div>
+                        <h2>Play Station 5</h2>
+                        <p class="date">3/25</p>
                     </header>
                     <div class="image">
-                        <img src="/images/ps5.jpg" alt="play station 5">
+                        <img src="/images/ps5.jpg" alt="Play Station 5">
                     </div>
                     <div class="description">
-                        <p class="text-start"><strong>200 likes</strong></p>
-                        <p>
-                            "SSD ultrarrápido, gráficos de locura y un DualSense que te hace sentir cada detalle. 
-                            ¿Qué más se puede pedir? 🔥🎮 #PlayHasNoLimits"
-                        </p>
+                        <p><strong>200 likes</strong></p>
+                        <p>"SSD ultrarrápido, gráficos de locura y un DualSense que te hace sentir cada detalle. 🔥🎮 #PlayHasNoLimits"</p>
                     </div>
                 </div>
                 <div class="feed">
-                    <header class=".info">
-                        <div class="tittlePhoto">
-                            <h2>Xbox Series</h2>
-                        </div>
-                        <div>
-                            <p class="date">3/25</p>
-                        </div>
+                    <header>
+                        <h2>Xbox Series</h2>
+                        <p class="date">3/25</p>
                     </header>
                     <div class="image">
-                        <img src="/images/xboxSeries.jpg" alt="play station 5">
+                        <img src="/images/xboxSeries.jpg" alt="Xbox Series">
                     </div>
                     <div class="description">
-                        <p class="text-start"><strong>130 likes</strong></p>
-                        <p>
-                        <p>
-                            "Potencia, velocidad y Game Pass. ¿Estás listo para jugar sin límites? 
-                            🚀🎮 #PowerYourDreams"
-                        </p>
+                        <p><strong>130 likes</strong></p>
+                        <p>"Potencia, velocidad y Game Pass. 🚀🎮 #PowerYourDreams"</p>
                     </div>
                 </div>
                 <div class="feed">
-                    <header class=".info">
-                        <div class="tittlePhoto">
-                            <h2>Play Station Portal</h2>
-                        </div>
-                        <div>
-                            <p class="date">2/25</p>
-                        </div>
+                    <header>
+                        <h2>Play Station Portal</h2>
+                        <p class="date">2/25</p>
                     </header>
                     <div class="image">
-                        <img src="/images/psPortal.jpg" alt="play station 5">
+                        <img src="/images/psPortal.jpg" alt="Play Station Portal">
                     </div>
                     <div class="description">
-                        <p class="text-start"><strong>350 likes</strong></p>
-                        <p>
-                        <p>
-                            "Tu PS5 en la palma de tu mano. 
-                            ¿Quién dijo que el gaming portátil había muerto? 🔥🎧 #PlayAnywhere"
-                        </p>
+                        <p><strong>350 likes</strong></p>
+                        <p>"Tu PS5 en la palma de tu mano. 🔥🎧 #PlayAnywhere"</p>
                     </div>
                 </div>
                 <div class="feed">
-                    <header class=".info">
-                        <div class="tittlePhoto">
-                            <h2>Nintendo nintendoSwitch</h2>
-                        </div>
-                        <div>
-                            <p class="date">1/25</p>
-                        </div>
+                    <header>
+                        <h2>Nintendo Switch</h2>
+                        <p class="date">1/25</p>
                     </header>
                     <div class="image">
-                        <img src="/images/nintendoSwitch.jpg" alt="play station 5">
+                        <img src="/images/nintendoSwitch.jpg" alt="Nintendo Switch">
                     </div>
                     <div class="description">
-                        <p class="text-start"><strong>450 likes</strong></p>
-                        <p>
-                        <p>
-                            "Juega donde quieras, cuando quieras y como quieras. 🎮✨ #SwitchOnTheGo"
-                            Si quieres un tono más divertido o épico, dime y los ajusto. 🚀
-                        </p>
+                        <p><strong>450 likes</strong></p>
+                        <p>"Juega donde quieras, cuando quieras y como quieras. 🎮✨ #SwitchOnTheGo"</p>
                     </div>
                 </div>
             </div>
         </main>
-      </div>
+    </div>
+</div>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
